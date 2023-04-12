@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Chart</title>
+    <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"
+      integrity="sha512-r22gChDnGvBylk90+2e/ycr3RVrDi8DIOkIGNhJlKfuyQM4tIRAI062MaV8sfjQKYVGjOBaZBOA87z+IhZE9DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.plot.ly/plotly-2.20.0.min.js" charset="utf-8"></script>
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div id="header">
+      <header>Select & Find</header>
+    </div>
+    <div id="select">
+      <select id="selection">
+        <option value="Data 1">Data 1</option>
+        <option value="Data 2">Data 2</option>
+        <option value="Data 3">Data 3</option>
+        <option value="Data 4">Data 4</option>
+      </select>
+    </div>
+    <div id="data1"></div>
+    <div id="table1" style="display: none;">
+        <table id="table">
+            <tr class="tr">
+                <th>Year</th>
+                <th>Sum of Sales (€million)</th>
+                <th>Sum of Capex (€million)</th>
+                <th>Sum of Profits (€million)</th>
+                <th>Sum of Market cap (€million)</th>
+            </tr>
+        </table>
+    </div>
+
+  </body>
+</html>
